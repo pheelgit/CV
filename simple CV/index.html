@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+        <title>pheel CV</title>
+  </head>
+  <body >
+    <div class="wrap">
+
+   
+    <header >
+        <div class="header--info card">
+            <div class="title">Филатов Дмитрий</div>
+            <ul class="info">
+                <li>Дата рождения: 29.12.1994</li>
+                <li>Город: Жуковский</li>
+                <li>Телефон: 8-903-308-96-56</li>
+                <li>Email: philatov63@mail.ru</li>
+            </ul>
+        </div>
+        <img src="assets/photo.jpg" class="header--photo card" width="200" ></img>
+    </header>
+    <main>
+
+<swiper-container class="mySwiper"  autoplay="true"  pagination="true" effect="cube" grab-cursor="true" cube-effect-shadow="true"
+    cube-effect-slide-shadows="true" cube-effect-shadow-offset="20" cube-effect-shadow-scale="0.94">
+    <swiper-slide >
+      <div class="links">        
+        <a href="https://track-body-app.vercel.app" target="_blank"> github</a>
+        <a href="https://github.com/pheelgit/track-body-app" target="_blank"> deploy</a>
+      </div>      
+      <img src="/assets/track-body.png">
+    </swiper-slide>
+    <swiper-slide>
+            <div class="links">        
+        <a href="https://github.com/pheelgit/react-firebase" target="_blank"> github</a>
+        <a href="https://react-firebase-lzmg.vercel.app" target="_blank"> deploy</a>
+      </div>  
+      <img src="/assets/todo.png" />
+    </swiper-slide>
+    <swiper-slide>
+            <div class="links">        
+        <a href="https://github.com/pheelgit/virtualkeyboard/tree/virtual-keyboard" target="_blank"> github</a>
+        <a href="https://pheelgit.github.io/virtualkeyboard/" target="_blank"> deploy</a>
+      </div>  
+      <img src="/assets/virtual-keyb.png" />
+    </swiper-slide>
+    <swiper-slide>
+            <div class="links">        
+        <a href="https://github.com/pheelgit/cssMemSlider/tree/gh-pages" target="_blank"> github</a>
+        <a href="https://pheelgit.github.io/cssMemSlider/cssMemSlider" target="_blank"> deploy</a>
+      </div>  
+      <img src="/assets/css-slider.png" />
+    </swiper-slide>
+  </swiper-container>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+    </main>
+  </body>
+   </div>
+</html>

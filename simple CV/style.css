@@ -1,0 +1,125 @@
+html {
+  height: 100%;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  font-size: 1.3rem;
+}
+body {
+  height: 100%;
+  animation: background 4s linear infinite alternate both;
+}
+
+.card {
+  border-radius: 30px;
+  background: #212121;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  animation: card-background 2s linear infinite;
+}
+
+.wrap {
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  padding-left: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(25, 25, 25);
+
+  animation: puff-in-center 1s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 2em;
+}
+.header--info {
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+
+.header--photo {
+  border-radius: 100px;
+}
+
+swiper-container {
+  margin-top: 2em;
+  width: 400px;
+  height: 500px;
+}
+
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+swiper-slide .links {
+  margin-bottom: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+swiper-slide .links a {
+  color: white;
+  text-decoration: none;
+}
+swiper-slide .links a:hover {
+  animation: jello-vertical 0.9s both;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+@keyframes background {
+  0% {
+    background: #121212;
+  }
+
+  100% {
+    background: #373737;
+  }
+}
+
+@keyframes puff-in-center {
+  0% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
