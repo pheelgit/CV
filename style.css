@@ -37,6 +37,7 @@ header {
   justify-content: center;
   gap: 200px;
   margin-top: 2em;
+  align-items: flex-start;
 }
 .header--info {
   padding: 1rem;
